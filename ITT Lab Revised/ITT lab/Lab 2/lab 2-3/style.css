@@ -1,0 +1,31 @@
+p,table,li
+{
+/* font-family: "lucida calligraphy", arial, 'sans serif'; */
+margin-left: 10pt;
+}
+h1 {
+    text-align: center;
+}
+p { word-spacing: 5px; }
+body { background-color:rgb(249, 200, 255); }
+/* p,li,td { font-size: 75%;} */
+td { padding: 0.5cm; }
+th {
+ text-align:center;
+ font-size: 85%;
+ }
+h1, h2, h3, hr {color:#483d8b;}
+table
+{
+border-style: outset;
+background-color: rgb(139, 100, 255);
+}
+li {list-style-type: lower-roman;}
+span
+{
+color:blue;
+background-color:rgba(99, 248, 0, 0.836);
+font-size: 29pt;
+font-style: italic;
+font-weight: bold;
+}

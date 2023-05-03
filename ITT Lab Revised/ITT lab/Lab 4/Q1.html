@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Example</title>
+	<style type="text/css">
+        body {
+			background-color: #ebd3ff;
+		}
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+		// Problem 1: Print first n Fibonacci numbers
+		function printFibonacci() {
+			var n = prompt("Enter the number of Fibonacci numbers to print:");
+			var a = 0, b = 1, c;
+			var output = "";
+			for (var i = 1; i <= n; i++) {
+				output += a + ", ";
+				c = a + b;
+				a = b;
+				b = c;
+			}
+			alert("The first " + n + " Fibonacci numbers are:\n" + output);
+		}
+
+		// Problem 2: Print table of numbers from 1 to n and their squares
+		function printTable() {
+			var n = prompt("Enter the number for generating table of squares:");
+			var output = "Number\tSquare\n";
+			for (var i = 1; i <= n; i++) {
+				output += i + "\t" + (i * i) + "\n";
+			}
+			alert(output);
+		}
+	</script>
+</head>
+<body>
+	<h1>JavaScript Example</h1>
+	<p>
+		<button class="button" onclick="printFibonacci()">Print Fibonacci Numbers</button>
+	</p>
+	<p>
+		<button class="button" onclick="printTable()">Print Table of Squares</button>
+	</p>
+</body>
+</html>

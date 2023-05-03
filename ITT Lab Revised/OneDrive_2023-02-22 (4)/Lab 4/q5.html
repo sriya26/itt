@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		label {
+			margin-bottom: 10px;
+		}
+		input[type="text"], select {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			margin-bottom: 10px;
+			width: 200px;
+			box-sizing: border-box;
+		}
+		input[type="button"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			padding: 10px 20px;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+		input[type="button"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+	<script type="text/javascript">
+		function calculate() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var operator = document.getElementById("operator").value;
+			var result;
+
+			if (operator == "+") {
+				result = num1 + num2;
+			} else if (operator == "-") {
+				result = num1 - num2;
+			} else if (operator == "*") {
+				result = num1 * num2;
+			} else if (operator == "/") {
+				result = num1 / num2;
+			}
+
+			document.getElementById("result").value = result;
+		}
+	</script>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form>
+		<label for="num1">Number 1:</label>
+		<input type="text" id="num1"><br>
+		<label for="num2">Number 2:</label>
+		<input type="text" id="num2"><br>
+		<label for="operator">Operator:</label>
+		<select id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select><br>
+		<input type="button" value="Calculate" onclick="calculate()">
+		<label for="result">Result:</label>
+		<input type="text" id="result">
+	</form>
+</body>
+</html>

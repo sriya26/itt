@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+</head>
+<body>
+    <form action="action_page.php" method="get">
+        <h1><center>University Student Feedback form</center></h1><br><br>
+        <h3>Name:</h3> <input type="text" name="name"><br>
+        <h3>Address:</h3> <input type="text" name="address"><br>
+        <h3>Email:</h3> <input type="text" name="email"><br>
+
+        <p><h3>What do you like the most about the campus?</h3></p>
+        <input type="checkbox" name="like" value="students">Students<br>
+        <input type="checkbox" name="like" value="location">Location<br>
+        <input type="checkbox" name="like" value="campus">Campus<br>
+        <input type="checkbox" name="like" value="atmosphere">Atmosphere<br>
+        <input type="checkbox" name="like" value="dorm">Dorm rooms<br>
+        <input type="checkbox" name="like" value="sports">Sports<br>
+
+        <p><h3>How did you get interested in the University?</h3></p>
+        <input type="radio" name="interest" value="friends">Friends<br>
+        <input type="radio" name="interest" value="television">Television<br>
+        <input type="radio" name="interest" value="internet">Internet<br>
+        <input type="radio" name="interest" value="others">Others
+        <input type="text" name="others"><br>
+
+        <p><h3>Additional Comments</h3></p>
+        <textarea name="comments" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
